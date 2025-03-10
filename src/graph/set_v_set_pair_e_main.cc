@@ -22,5 +22,5 @@
 int main() {
   std::set<int> v = {1, 2, 3, 4};
   std::set<std::pair<int, int>> e = {{1, 2}, {2, 4}, {4, 3}, {3, 1}};
-  Graph g(v, e);
+  // Graph g(v, e);
 }

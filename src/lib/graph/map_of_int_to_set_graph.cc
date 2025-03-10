@@ -52,7 +52,7 @@ std::vector<int> MapSetGraph::TopologicalSort(int root) {
   std::map<int, int> marks;
 
   DFS_helper_with_topo(root, marks, topo_list);
-  std::reverse(topo_list);
+  // std::reverse(topo_list);
   return topo_list;
 }
 

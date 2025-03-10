@@ -35,7 +35,7 @@ int main() {
   l.push_back(8);
   l.push_back(9);
 
-  for (auto it = l.begin(); i != l.end(); ++it) {
+  for (auto it = l.begin(); it != l.end(); ++it) {
     std::cout << "*it: " << *it << std::endl;
   }
 
@@ -48,7 +48,7 @@ int main() {
 
   // Print(l);
 
-  auto it = l.begin();
+  it = l.begin();
 
   std::advance(it, 4);
   int data = *it;

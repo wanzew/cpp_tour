@@ -85,3 +85,10 @@ cc_library(
     hdrs = ["utility.h"],
     visibility = ["//visibility:public"],
 )
+
+cc_library(
+    name = "pointer",
+    srcs = ["graph/pointer.cc"],
+    hdrs = ["graph/pointer.h"],
+    visibility = ["//visibility:public"]
+)
