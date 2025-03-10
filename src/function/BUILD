@@ -36,43 +36,51 @@ cc_binary(
 cc_binary(
     name = "advanced_transform_main",
     srcs = ["advanced_transform_main.cc"],
-    deps = ["//src/lib:SolutionLib"],
+    deps = ["//src/lib:SolutionLib",
+            "//src/lib:utility",],
 )
 
 cc_binary(
     name = "std_function",
     srcs = ["std_function.cc"],
-    deps = ["//src/lib:SolutionLib"],
+    deps = ["//src/lib:SolutionLib",
+    # "//src/lib:utility",
+    ],
 )
 
 cc_binary(
     name = "transform",
     srcs = ["transform.cc"],
-    deps = ["//src/lib:SolutionLib"],
+    deps = ["//src/lib:SolutionLib",
+    "//src/lib:utility",],
 )
 
 cc_binary(
     name = "filter",
     srcs = ["filter.cc"],
-    deps = ["//src/lib:SolutionLib"],
+    deps = ["//src/lib:SolutionLib",
+            "//src/lib:utility",],
 )
 
 cc_binary(
     name = "map_main",
     srcs = ["map_main.cc"],
-    deps = ["//src/lib:SolutionLib"],
+    deps = ["//src/lib:SolutionLib",
+    "//src/lib:utility",],
 )
 
 cc_binary(
     name = "generate_main",
     srcs = ["generate_main.cc"],
-    deps = ["//src/lib:SolutionLib"],
+    deps = ["//src/lib:SolutionLib",
+    "//src/lib:utility",],
 )
 
 cc_binary(
     name = "adjacent_diff_main",
     srcs = ["adjacent_diff_main.cc"],
-    deps = ["//src/lib:SolutionLib"],
+    deps = ["//src/lib:SolutionLib",
+    "//src/lib:utility",],
 )
 
 cc_binary(

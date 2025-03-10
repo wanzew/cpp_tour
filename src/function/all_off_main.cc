@@ -1,6 +1,7 @@
 #include <iostream>
 #include <numeric>
 #include <vector>
+#include <algorithm>
 
 bool MyPredicate(const int& i) { return (i % 2) == 0; }
 
@@ -12,7 +13,7 @@ int main() {
   auto all_are_odd = std::all_of(v1.begin(), v1.end(),
                                  [](const int& i) { return (i % 2) == 1; });
 
-  std::copy_n()
+  // std::copy_n();
 
   std::cout << "all_are_even: " << all_are_even
             << ", all_are_odd: " << all_are_odd << std::endl;

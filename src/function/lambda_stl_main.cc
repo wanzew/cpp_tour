@@ -5,7 +5,7 @@
 #include "src/lib/utility.h"
 bool MyOwnFunction(int a, int b) { return a > b; }
 
-MyOwnDevider(const float &a){return a / ? }
+// MyOwnDevider(const float &a){return a / ? }
 
 std::vector<float> divEachBy(const std::vector<float> &v, float denominator) {
   std::vector<float> ret;
@@ -26,14 +26,14 @@ int main() {
   std::sort(my_vector.begin(), my_vector.end(), MyOwnFunction);
   std::sort(my_vector.begin(), my_vector.end(), [&](int a, int b) -> bool {
     // Return a greater than b instead of less
-    std::cout << "x: " << x << std::endl;
-    std::cout << "y: " << y << std::endl;
+    std::cout << "a: " << a << std::endl;
+    std::cout << "b: " << b << std::endl;
     return a > b;
   });
 
   int c = 0, d;
   c++;
-  auto my_lambda2 = [&c]() -> void { c++ };
+  auto my_lambda2 = [&c]() -> void { c++; };
   my_lambda2();  // also does c++
   std::cout << "c: " << c << std::endl;
 
